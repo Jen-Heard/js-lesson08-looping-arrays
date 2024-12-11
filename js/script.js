@@ -14,15 +14,15 @@ var programmingLanguages = [
 console.log(programmingLanguages);
 
 for (var language of programmingLanguages) {
-  console.log(`I want to learn ${language}!`);
+  console.log(`I want to learn ${language}`);
 };
 
-programmingLanguages.forEach(function (language, index) {
-  // console.log(`${language} ${index + 1}`);
-  console.log(`${index + 1}. ${language}`.toUpperCase());
+programmingLanguages.forEach(function (item, index) {
+  console.log(`${index + 1}. ${item}`);
 });
 
-var updatedLanguages = programmingLanguages.filter(function (language) {
-  return language.includes("y");
+var updatedLanguages = programmingLanguages.filter(function (item) {
+  return item.includes("y");
 });
+
 console.log(updatedLanguages);
